@@ -82,11 +82,25 @@
       <button (click)="getBotaoClicado()" class="btn btn-primary">
         Me Clique!
       </button>
-      <br><br>
+      <br /><br />
 
-<input type="text"
-(keyup) = "onKeyUp($event)"/>     
-
+      <input
+        type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput
+      />
+      <p>Valor digitado na Tela abaixo : {{ this.valorAtual }}</p>
+      <p>Valor Salvo : {{ this.valorSalvo }}</p>
+      <br>
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      
+      >
+      <h3>Passe o mouse sobre mim</h3>
+      </span>
     </div>
   </article>
 </section>
