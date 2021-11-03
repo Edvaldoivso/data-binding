@@ -3,7 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.css'],
+  //styleUrls: ['./data-binding.component.css'],
+  //Boa pratica quando o é pouco fazer inline msm
+  styles: [
+    `
+      .highlight {
+        color: red;
+        font-weight: bold;
+      }
+    `,
+  ],
 })
 export class DataBindingComponent implements OnInit {
   //Declaração de Variaveis
@@ -12,8 +21,15 @@ export class DataBindingComponent implements OnInit {
   urlImagem: String = 'https://lorempixel.com/400/200/nature/';
   valorAtual: string = '';
   valorSalvo = '';
- isMouseOver : boolean = false;
+  isMouseOver: boolean = false;
+  nome: string = 'abc';
 
+  //Objetos
+  pessoa: any = {
+    nome: 'Edvaldo',
+    idade: '29',
+
+  };
 
   //Métodos
   getValor() {
@@ -33,18 +49,14 @@ export class DataBindingComponent implements OnInit {
     this.valorAtual = (<HTMLInputElement>evento.target).value;
   }
 
-  salvarValor(valor : any) {
+  salvarValor(valor: any) {
     this.valorSalvo = valor;
   }
 
-
-
- onMouseOverOut(){
-   this.isMouseOver = !this.isMouseOver;
- }
-
-
-
+  onMouseOverOut() {
+    this.isMouseOver = !this.isMouseOver;
+    console.log('Muda Cor');
+  }
 
   constructor() {}
 

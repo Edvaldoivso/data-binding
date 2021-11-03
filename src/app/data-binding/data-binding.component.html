@@ -74,7 +74,7 @@
         Esse texto somente aparece em caso de erro.
       </div>
     </div>
-  </article-->
+  </article>
 
   <article>
     <h3>Event Binding</h3>
@@ -97,10 +97,56 @@
       <span
       (mouseover)="onMouseOverOut()"
       (mouseout)="onMouseOverOut()"
-      
+      [class.highlight]="isMouseOver"
       >
       <h3>Passe o mouse sobre mim</h3>
       </span>
     </div>
   </article>
+</section-->
+
+  <section>
+    <article>
+      <h3>two-way data Binding</h3>
+      <div>
+        <input
+          type="text"
+          [value]="nome"
+          (input)="nome = campo2way.value"
+          #campo2way
+        />
+
+        <br />
+        <br />
+
+        <input
+          type="text"
+          [ngModel]="nome"
+          (ngModelChange)="nome = campoway.value"
+          #campoway
+        />
+
+        <br />
+        <br />
+
+        <input
+          type="text" [(ngModel)]="nome"/>
+
+        <p>Você digitu o nome: {{ nome }}</p>
+      </div>
+
+
+<div>
+<p>Meu nome é {{ pessoa.nome }} e minha idade é {{ pessoa.idade }}</p>
+<input type="text" [(ngModel)]="pessoa.nome">
+<input type="text" [(ngModel)]="pessoa.idade">
+
+</div>
+
+
+
+
+
+    </article>
+  </section>
 </section>
