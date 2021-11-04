@@ -1,5 +1,5 @@
-<section>
-  <!-- article>
+<!--section>
+  < article>
 
 <h3>Interpolation / Interpolação</h3>
 <p>String renderizada com interpolação: {{ url }}</p>
@@ -156,7 +156,10 @@
 
 <app-curso [nome]="nomeDoCurso"></app-curso>
 
+<contador [valor]="10"
+ (mudouValor)="onMudouValor($event)"
 
+></contador>
 
 </article>
 </section>

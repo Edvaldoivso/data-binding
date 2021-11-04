@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImputPropertyComponent } from './imput-property/imput-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
-  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent],
+  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent, OutputPropertyComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
