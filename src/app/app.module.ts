@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImputPropertyComponent } from './imput-property/imput-property.component';
 
 @NgModule({
-  declarations: [AppComponent, DataBindingComponent],
+  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
