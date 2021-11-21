@@ -3,16 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  //styleUrls: ['./data-binding.component.css'],
+  styleUrls: ['./data-binding.component.css'],
   //Boa pratica quando o é pouco fazer inline msm
-  styles: [
-    `
-      .highlight {
-        color: red;
-        font-weight: bold;
-      }
-    `,
-  ],
+
 })
 export class DataBindingComponent implements OnInit {
   //Declaração de Variaveis
