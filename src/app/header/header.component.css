@@ -1,10 +1,37 @@
-*{
-  
-  text-align: center;
-  background-color: rgb(41, 179, 200);
-  height: 100px;
+#Header {
+ 
+  border: 2px solid;
+  background-color: rgb(112, 162, 169);
+  height: 15%;
   width: 100%;
+  top: 0%;
+  position: fixed;
+ 
+    
+}
+
+ul {
+
+  text-align: right;
+  border: 2px black;
+  
+}
+
+ul li {
+  color: rgb(43, 11, 137);
+  text-align: right;
   display: inline;
-  padding: 3%;
-   
+  padding: 1%;
+  font-size: large;
+  transition: font-size 1s;
+ 
+}
+
+ul > li :hover {
+  color: rgb(111, 3, 3);
+}
+
+p {
+  padding-top: 1%;
+  text-align: left;
 }

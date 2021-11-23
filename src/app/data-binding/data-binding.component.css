@@ -3,6 +3,9 @@
   font-weight: bold;
 }
 
+
+
+
 #Body {
   display: flex;
   justify-content: center;
@@ -10,20 +13,20 @@
   justify-content: space-around;
 
   padding: 1%;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-bottom: 5%;
-  background-color: rgb(180, 135, 180);
+  /*background-color: rgb(180, 135, 180);*/
   height: 550px;
   width: 100%;
   color: blue;
-  border: 2px solid rgb(0, 0, 0);
+  /*border: 2px solid rgb(0, 0, 0);*/
 }
 
 #Teste {
   height: 500px;
   width: 800px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(9, 0, 109);
+  /*border: 2px solid rgb(0, 0, 0);*/
+  /*background-color: rgb(9, 0, 109);*/
   color: red;
   font-weight: bold;
 }
