@@ -9,10 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImputPropertyComponent } from './imput-property/imput-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { DiretivangifComponent } from './diretivangif/diretivangif.component';
+import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 
 
 @NgModule({
-  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent, OutputPropertyComponent, DiretivangifComponent],
+  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent, OutputPropertyComponent, DiretivangifComponent, DiretivaNgswitchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
