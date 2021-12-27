@@ -14,7 +14,7 @@ cursos : string[] = ['Angular 2', 'Java', 'React']
 
   ngOnInit(): void {
     for (let i=0; i<this.cursos.length; i++){
-      let cursos = this.cursos[ ]
+      let cursos = this.cursos[i]
     }
   }
 
