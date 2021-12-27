@@ -10,10 +10,11 @@ import { ImputPropertyComponent } from './imput-property/imput-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { DiretivangifComponent } from './diretivangif/diretivangif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 
 
 @NgModule({
-  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent, OutputPropertyComponent, DiretivangifComponent, DiretivaNgswitchComponent],
+  declarations: [AppComponent, DataBindingComponent, ImputPropertyComponent, OutputPropertyComponent, DiretivangifComponent, DiretivaNgswitchComponent, DiretivaNgforComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
