@@ -13,7 +13,7 @@ meuFavorito : boolean = false;
 
 onClick(){
   this.meuFavorito = !this.meuFavorito;
-  alert("Clicou Sim")
+  
 }
 
 
